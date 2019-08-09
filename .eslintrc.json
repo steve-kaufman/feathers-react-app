@@ -1,29 +1,26 @@
 {
-  "env": {
-    "es6": true,
-    "node": true,
-    "jest": true
-  },
-  "parserOptions": {
-    "ecmaVersion": 2017
-  },
-  "extends": "eslint:recommended",
-  "rules": {
-    "indent": [
-      "error",
-      2
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "standard"
     ],
-    "linebreak-style": [
-      "error",
-      "unix"
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
     ],
-    "quotes": [
-      "error",
-      "single"
-    ],
-    "semi": [
-      "error",
-      "always"
-    ]
-  }
+    "rules": {
+    }
 }
